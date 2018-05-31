@@ -1,6 +1,4 @@
-const http = require('http');
-const host = '127.0.0.1';
-const port = 3000;
+
 const unde = 'undefined';
 const data = new Date();
 const dia =  data.getDate();
@@ -42,44 +40,5 @@ FB.api('me/friends?fields=name,birthday', function(res){
 		
 	}
 });
-
-
-/*
-const server = http.createServer(
-(req, res) => {
-
-	res.statusCode = 200;
-	res.setHeader('Content-Type', 'text/plain');
-	res.end('hello world');
-
-}
-);
-
-
-server.listen(port, host, ()=>{
-
-	console.log('Serve running at http:'+host+':'+port);
-
-}
-);
-
-
-FB.api('me/friends?fields=name,birthday', function(res){
-	if(!res || res.erro){console.log('erro'); return;}
-
-
-	console.log(res);
-	if(res['data'].name)		
-
-
-	
-
-	
-
-});
-
-*/
-
-
 
 
